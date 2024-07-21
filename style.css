@@ -1,0 +1,148 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    transition: 0.2s ease-in-out;
+    user-select: none;
+}
+main{
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#cat{
+    width:55px;
+    height:55px;
+    position:absolute;
+    left:10px;
+    top:-50px;
+}
+body{
+    background-color: #E6CCB2;
+}
+
+#title{
+    background-color: #DDB892;
+    color: #7f5539;
+    height: 100px;
+    box-shadow: 10px 10px;
+}
+#title h1{
+    letter-spacing: 10px;
+    font-size: 45px;
+    font-weight: 640;
+    padding: 19px;
+    margin: 0;
+}
+p{
+    margin-top: 40px;
+    color: #7F5539;
+    font-weight: 600 ;
+}
+#buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+input[type=submit]{
+    background-color: #7F5539;
+    border: none;
+    color: #E6CCB2;
+    padding:12px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 15px;
+    margin-top: 40px;
+    box-shadow: 5px 5px #BB967F;
+}
+
+input[type=submit]:hover {
+    background-color: #BB967F ;
+    color: #7F5539;
+    cursor: pointer;
+    box-shadow: 5px 5px #7F5539;
+}
+
+#HomeScreen_btn{
+margin: 0;
+}
+
+.turn-container{
+    width: 170px;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+}
+
+.turn-container h3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: #7F5539;
+}
+
+.turn-container .turn-box{
+    border: 3px solid #7F5539;
+    font-size: larger;
+    font-weight: bold;
+    color:#7F5539 ;
+}
+
+.turn-container .turn-box:nth-child(even){
+ border-right: none;
+}
+
+.bg{
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ width: 85px;
+ height: 35px;
+ background-color:#BB967F;
+ z-index: -1;
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 300px;
+    width: 300px;
+    margin: 40px auto 30px auto;
+    text-align: center;
+    border: 2px solid #7F5539;
+    box-shadow: 10px 10px #BB967F;
+    
+}
+
+.box{
+    cursor: pointer;
+    font-size: 3rem;
+    font-weight: bold;
+    border: 2px solid #7F5539;
+    color: #7F5539;
+}
+
+.box:hover{
+    background-color: #BB967F;
+}
+
+#Reset_btn{
+    display: block;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+
+#result{
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #7F5539;
+}
